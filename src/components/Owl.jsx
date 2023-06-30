@@ -3,11 +3,44 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
+const options = {
+    margin: 30,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    autoplay: false,
+   
+    smartSpeed: 1000,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        700: {
+            items: 3,
+        },
+        1000: {
+            items: 5,
+
+        }
+    },
+};
+
 const Owl = () => {
   return (
     <>
       <div className="container-fluid " id="news-slider">
-        <OwlCarousel className="owl-carousel" nav style={{position:"relative"}}>
+        <OwlCarousel
+          className="owl-carousel"
+          nav
+          style={{ position: "relative" }}
+          {...options}
+        >
           <div className="item" style={{ marginRight: "15px" }}>
             <div className="our-gallery">
               <img src="assets/img/02/1.jpg" />

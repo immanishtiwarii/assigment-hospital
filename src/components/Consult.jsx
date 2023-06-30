@@ -1,30 +1,55 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import d1 from "./img/1.jpg";
 import d2 from "./img/2.jpg";
 
 const responsive = {
+    
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 2,
+    
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 2,
+    
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
+   
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
+    
   },
 };
 
+
+
 const Consult = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+  };
+
+  // Add event listener for window resize
+  window.addEventListener("resize", handleResize);
+
+  // Call handleResize once to initialize the value
+  handleResize();
+
+  // Clean up the event listener on component unmount
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);
   return (
     <>
       <section id="consult-doctors">
@@ -44,7 +69,7 @@ const Consult = () => {
 
           <div className="doctors-img">
           <div id="expert" >
-            <Carousel responsive={responsive} infinite={true} arrows={false} draggable={true} >
+            <Carousel responsive={responsive} arrows={isMobile} infinite={true} draggable={true} >
            
               <div className="item" style={{marginRight:"1rem",textAlign:"center"}}>
                 <div className="dr-box">
