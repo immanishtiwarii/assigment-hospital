@@ -1,0 +1,160 @@
+.icono_apply {
+    margin-left: 0.3rem !important;
+}
+
+@media(min-device-width:991px) and (max-device-width:1500px) {
+    .btnh {
+        min-height: 81px !important;
+    }
+}
+
+.btn-tertiary:hover i {
+    filter: invert(1);
+}
+
+#ContactForm a {
+    margin-top: 0px !important;
+    display: block;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-style: inherit !important;
+}
+
+
+#ContactForm .mt-3, .my-3 {
+    margin-top: 0.5rem !important;
+}
+
+.logo_top {
+    background: #225a40b0 !important;
+    margin-bottom: 15px;
+    max-height: 90px !important;
+    max-width: 320px !important;
+    border-radius: 8px;
+}
+
+.logo_center {
+    text-align: center;
+    margin: auto;
+    display: table;
+    max-height: 95px !important;
+    padding-top: 12px;
+}
+
+.banner h2 {
+    background: #225a40b0 !important;
+}
+
+.banner p {
+    font-size: 19px;
+    background: #f7a800 !important;
+    color: #225a40;
+    font-weight: 700;
+    padding: 10px 20px;
+    max-width: 450px;
+}
+.banner img.logo {
+    width: 280px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.student-img img {
+    width: auto !important;
+}
+
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
+
+.banner-form {
+    margin-bottom: 40px;
+}
+
+.owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+}
+
+@media (width: 1024px) {
+    .testimoni-box {
+        height: 500px;
+        min-height: 600px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    #testimoni .owl-next img {
+        position: absolute;
+        top: 1%;
+        right: 35%;
+        margin: 0;
+    }
+
+    #testimoni .owl-prev img {
+        position: absolute;
+        top: 1%;
+        right: 15%;
+        margin: 0;
+    }
+}
+
+@media(min-device-width:769px) and (max-device-width:1023px) {
+    .testimoni-box {
+        min-height: 900px;
+    }
+}
+
+.footer-bottom .col-lg-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40.66666% !important;
+    flex: 0 0 40.66666% !important;
+    max-width: 40.66666% !important;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .about-main .w-100 {
+        width: 100% !important;
+        margin: 20px 20px 0px;
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-bottom .col-lg-10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 99.66666% !important;
+        flex: 0 0 99.66666% !important;
+        max-width: 99.66666% !important;
+        text-align: center;
+        margin: auto;
+    }
+
+    .footer-bottom p {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .footer-bottom ul.footer-logo li {
+        list-style: none;
+        display: inline-block;
+        width: 50%;
+        padding: 0 5px;
+    }
+}
+@media (min-width: 280px)
+{
+    .logo-top {
+        width: 171px;
+    }
+   
+}
